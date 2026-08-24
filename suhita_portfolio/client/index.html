@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC PAGE SETTINGS
+         ===================================================== -->
+
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website description for search engines -->
+    <meta name="description"
+          content="Suhita Roy - B.Tech CSE Data Science student portfolio">
+
+    <meta name="author"
+          content="Suhita Roy">
+
+    <title>Suhita Roy | Portfolio</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         CSS FILE
+         ===================================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SCROLL PROGRESS BAR
+
+         This colorful line at the top shows how far
+         the visitor has scrolled through the website.
+         ===================================================== -->
+
+    <div class="scroll-progress"
+         id="scrollProgress">
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVIGATION BAR
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="container nav-inner">
+
+
+            <!-- =================================================
+                 LOGO
+                 Clicking the logo takes the visitor to Home.
+                 ================================================= -->
+
+            <a href="#home"
+               class="brand">
+
+                Suhita
+
+            </a>
+
+
+
+            <!-- =================================================
+                 RIGHT SIDE CONTROLS
+                 Contains:
+
+                 1. Light/Dark mode button
+                 2. Mobile hamburger button
+                 ================================================= -->
+
+            <div class="nav-controls">
+
+
+                <!-- =============================================
+                     LIGHT / DARK MODE BUTTON
+                     ============================================= -->
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    title="Switch theme">
+
+                    <span id="themeIcon">
+                        ☀️
+                    </span>
+
+                </button>
+
+
+
+                <!-- =============================================
+                     MOBILE MENU BUTTON
+                     ============================================= -->
+
+                <button
+                    class="menu-btn"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NAVIGATION LINKS
+
+                 These DON'T open separate HTML files.
+
+                 Instead:
+
+                 #home       → Home section
+                 #about      → About section
+                 #education  → Education section
+                 etc.
+
+                 Therefore the website remains a SINGLE PAGE.
+                 ================================================= -->
+
+            <ul class="nav-links">
+
+
+                <li>
+
+                    <a href="#home"
+                       class="nav-link active">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#about"
+                       class="nav-link">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#education"
+                       class="nav-link">
+
+                        Education
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#skills"
+                       class="nav-link">
+
+                        Skills
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#experience"
+                       class="nav-link">
+
+                        Experience
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#projects"
+                       class="nav-link">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#contact"
+                       class="nav-link">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         MAIN WEBSITE CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+
+        <!-- =================================================
+             HOME SECTION
+             ================================================= -->
+
+        <section id="home" class="hero section-anchor">
+
+    <div class="container hero-grid">
+
+        <div class="reveal">
+
+            <div class="kicker">
+                <h2>Hello, I'm Suhita 👋</h2>
+            </div>
+
+            <h2>
+
+                Building Ideas.  
+                <span class="gradient-text">
+                    Creating Experiences.
+                </span>
+                Shaping the Web.
+
+            </h2>
+
+            <p>
+
+                I'm a Computer Science & Engineering
+                (Data Science) student who enjoys exploring
+                web development, learning new technologies
+                and working with people on interesting ideas.
+
+                I'm still learning, experimenting and figuring
+                things out — and that's what makes the journey
+                exciting for me.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="assets/RESUME.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    View My Resume ↗
+
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="btn btn-ghost">
+
+                    Get to know me ↓
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-wrap reveal delay-2">
+
+            <img
+                src="assets/profile.jpg"
+                alt="Suhita Roy"
+                class="profile-img">
+
+
+            <div class="float-card float-one">
+
+                <strong>
+                    CSE · Data Science
+                </strong>
+
+                Always learning
+
+            </div>
+
+
+            <div class="float-card float-two">
+
+                <strong>
+                    Web Development
+                </strong>
+
+                HTML · CSS · JS
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================================
+             ABOUT SECTION
+             ================================================= -->
+
+        <section
+            id="about"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    01 · About
+
+                </div>
+
+
+                <h2>
+
+                    More than a
+
+                    <span class="gradient-text">
+
+                        student.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    My profile, interests and the qualities
+                    I am developing throughout my engineering journey.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container grid-2">
+
+
+                <!-- Who I am -->
+
+                <article class="card reveal">
+
+
+                    <h3 class="section-title">
+
+                        A bit about me
+
+                    </h3>
+
+
+                    <p>
+
+                        I'm currently pursuing my B.Tech in Computer
+                Science & Engineering with a specialization in
+                Data Science.
+
+                I started exploring technology because I liked
+                the idea of creating something from scratch and
+                seeing it actually work.
+
+                Right now, I'm particularly interested in
+                web development and I'm gradually expanding
+                my skills in programming and data science.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- Values -->
+
+                <article class="card reveal delay-1">
+
+
+                    <h3 class="section-title">
+
+                        What I Value
+
+                    </h3>
+
+
+                    <div class="tags">
+
+
+                        <span class="tag">
+                            Communication
+                        </span>
+
+
+                        <span class="tag">
+                            Teamwork
+                        </span>
+
+
+                        <span class="tag">
+                            Leadership
+                        </span>
+
+
+                        <span class="tag">
+                            Adaptability
+                        </span>
+
+
+                        <span class="tag">
+                            Continuous Learning
+                        </span>
+
+
+                        <span class="tag">
+                            Creativity
+                        </span>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EDUCATION SECTION
+             ================================================= -->
+
+        <section
+            id="education"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    02 · Education
+
+                </div>
+
+
+                <h2>
+
+                    My academic
+
+                    <span class="gradient-text">
+
+                        journey.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Click any institution card to visit
+                    its official website.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container grid-2">
+
+
+
+                <!-- =========================================
+                     COLLEGE
+                     ========================================= -->
+
+                <a
+                    href="https://www.nsec.ac.in/"
+                    target="_blank"
+                    rel="noopener"
+                    class="card edu-link reveal">
+
+
+                    <img
+                        src="assets/nsec-card.svg"
+                        alt="Netaji Subhash Engineering College">
+
+
+                    <div class="edu-body">
+
+
+                        <div class="meta">
+
+                            2024 — 2028
+
+                        </div>
+
+
+                        <h3>
+
+                            B.Tech in Computer Science &
+                            Engineering (Data Science)
+
+                        </h3>
+
+
+                        <p>
+
+                            Netaji Subhash Engineering College
+
+                        </p>
+
+
+                    </div>
+
+
+                </a>
+
+
+
+                <!-- =========================================
+                     UNIVERSITY
+                     ========================================= -->
+
+                <a
+                    href="https://makautwb.ac.in/"
+                    target="_blank"
+                    rel="noopener"
+                    class="card edu-link reveal delay-1">
+
+
+                    <img
+                        src="assets/makaut-card.svg"
+                        alt="MAKAUT West Bengal">
+
+
+                    <div class="edu-body">
+
+
+                        <div class="meta">
+
+                            University Affiliation
+
+                        </div>
+
+
+                        <h3>
+
+                            Maulana Abul Kalam Azad
+                            University of Technology,
+                            West Bengal
+
+                        </h3>
+
+
+                        <p>
+
+                            Official university website
+
+                        </p>
+
+
+                    </div>
+
+
+                </a>
+
+
+
+                <!-- =========================================
+                     DELHI PUBLIC SCHOOL
+                     ========================================= -->
+
+                <a
+                    href="https://www.dpskolkata.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="card edu-link reveal">
+
+
+                    <img
+                        src="assets/dps-card.svg"
+                        alt="Delhi Public School">
+
+
+                    <div class="edu-body">
+
+
+                        <div class="meta">
+
+                            Class XII · 87%
+
+                        </div>
+
+
+                        <h3>
+
+                            Delhi Public School
+
+                        </h3>
+
+
+                        <p>
+
+                            CBSE · Kolkata
+
+                        </p>
+
+
+                    </div>
+
+
+                </a>
+
+
+
+                <!-- =========================================
+                     ST TERESA SCHOOL
+                     ========================================= -->
+
+                <a
+                    href="https://sttheresasicse.org/"
+                    target="_blank"
+                    rel="noopener"
+                    class="card edu-link reveal delay-1">
+
+
+                    <img
+                        src="assets/st-teresa-card.svg"
+                        alt="St. Teresa School">
+
+
+                    <div class="edu-body">
+
+
+                        <div class="meta">
+
+                            Class X · 92%
+
+                        </div>
+
+
+                        <h3>
+
+                            St. Teresa School
+
+                        </h3>
+
+
+                        <p>
+
+                            ICSE · Kolkata
+
+                        </p>
+
+
+                    </div>
+
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS SECTION
+             ================================================= -->
+
+        <section
+            id="skills"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    03 · Skills
+
+                </div>
+
+
+                <h2>
+
+                     Things I'm
+
+                    <span class="gradient-text">
+
+                        learning.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    My current technical and soft-skill foundation.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container grid-2">
+
+
+
+                <!-- =========================================
+                     TECHNICAL SKILLS
+                     ========================================= -->
+
+                <article class="card reveal">
+
+
+                    <h3 class="section-title">
+
+                        Technical Skills
+
+                    </h3>
+
+
+
+                    <!-- C -->
+
+                    <div class="skill">
+
+
+                        <div class="skill-top">
+
+                            <span>
+                                C
+                            </span>
+
+                            <span>
+                                Intermediate
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar">
+
+                            <span data-width="72%"></span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Python -->
+
+                    <div class="skill">
+
+
+                        <div class="skill-top">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar">
+
+                            <span data-width="42%"></span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- HTML -->
+
+                    <div class="skill">
+
+
+                        <div class="skill-top">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                Intermediate
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar">
+
+                            <span data-width="72%"></span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CSS -->
+
+                    <div class="skill">
+
+
+                        <div class="skill-top">
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                Growing proficiency
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar">
+
+                            <span data-width="62%"></span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- JavaScript -->
+
+                    <div class="skill">
+
+
+                        <div class="skill-top">
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                Growing proficiency
+                            </span>
+
+                        </div>
+
+
+                        <div class="bar">
+
+                            <span data-width="58%"></span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                     SOFT SKILLS
+                     ========================================= -->
+
+                <article class="card reveal delay-1">
+
+
+                    <h3 class="section-title">
+
+                        Soft Skills
+
+                    </h3>
+
+
+                    <div class="tags">
+
+
+                        <span class="tag">
+                            Communication
+                        </span>
+
+
+                        <span class="tag">
+                            Leadership
+                        </span>
+
+
+                        <span class="tag">
+                            Teamwork
+                        </span>
+
+
+                        <span class="tag">
+                            Adaptability
+                        </span>
+
+
+                        <span class="tag">
+                            Presentation
+                        </span>
+
+
+                        <span class="tag">
+                            Problem Solving
+                        </span>
+
+
+                    </div>
+
+
+                    <div class="notice">
+
+                        I am continuously improving my technical
+                        foundation through hands-on learning
+                        and real-world projects.
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE SECTION
+             ================================================= -->
+
+        <section
+            id="experience"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    04 · Experience
+
+                </div>
+
+
+                <h2>
+
+                    Experience &
+
+                    <span class="gradient-text">
+
+                        internships.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Activities and experiences from my academic journey.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container">
+
+
+                <div class="timeline">
+
+
+
+                    <!-- Experience 1 -->
+
+                    <article class="timeline-item reveal">
+
+
+                        <div class="meta">
+
+                            2025
+
+                        </div>
+
+
+                        <h3>
+
+                            Smart India Hackathon Participant
+
+                        </h3>
+
+
+                        <p>
+
+                            Participated in Smart India Hackathon 2025.
+
+                        </p>
+
+
+                    </article>
+
+
+
+                    <!-- Experience 2 -->
+
+                    <article class="timeline-item reveal delay-1">
+
+
+                        <div class="meta">
+
+                            2024
+
+                        </div>
+
+
+                        <h3>
+
+                            Sand Rover Event — IIT Kharagpur
+
+                        </h3>
+
+
+                        <p>
+
+                            Participated in the Sand Rover event
+                            at IIT Kharagpur.
+
+                        </p>
+
+
+                    </article>
+
+
+
+                    <!-- Experience 3 -->
+
+                    <article class="timeline-item reveal delay-2">
+
+
+                        <div class="meta">
+
+                            School
+
+                        </div>
+
+
+                        <h3>
+
+                            Student Representative
+
+                        </h3>
+
+
+                        <p>
+
+                            Served as a student representative in school.
+
+                        </p>
+
+
+                    </article>
+
+
+
+                    <!-- Experience 4 -->
+
+                    <article class="timeline-item reveal delay-3">
+
+
+                        <div class="meta">
+
+                            College
+
+                        </div>
+
+
+                        <h3>
+
+                            Badminton Competitions
+
+                        </h3>
+
+
+                        <p>
+
+                            Participated in college-level
+                            badminton competitions.
+
+                        </p>
+
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- Internship area -->
+
+                <div
+                    class="card reveal"
+                    style="margin-top:25px;">
+
+
+                    <h3 class="section-title">
+
+                        Internships
+
+                    </h3>
+
+
+                    <p>
+
+                        This section is ready for adding your
+                        future internship companies, roles,
+                        dates and responsibilities.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS SECTION
+             ================================================= -->
+
+        <section
+            id="projects"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    05 · Projects
+
+                </div>
+
+
+                <h2>
+
+                    A few things I've
+
+                    <span class="gradient-text">
+
+                        worked on.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Here's a collection of projects and experiences that
+    I've worked on during my college journey.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container grid-2">
+
+
+
+                <!-- Project 1 -->
+
+                <article class="card reveal">
+
+
+                    <div class="meta">
+
+                        Hackathon · 2025
+
+                    </div>
+
+
+                    <h3>
+
+                        Smart India Hackathon
+
+                    </h3>
+
+
+                    <p>
+
+                        Participated in Smart India Hackathon 2025.
+                        Add your final problem statement, role,
+                        technologies and project links here.
+
+                    </p>
+
+
+                    <div class="tags">
+
+
+                        <span class="tag">
+                            Teamwork
+                        </span>
+
+
+                        <span class="tag">
+                            Problem Solving
+                        </span>
+
+
+                        <span class="tag">
+                            Innovation
+                        </span>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- Project 2 -->
+
+                <article class="card reveal delay-1">
+
+
+                    <div class="meta">
+
+                        Portfolio · 2026
+
+                    </div>
+
+
+                    <h3>
+
+                        Responsive Personal Portfolio
+
+                    </h3>
+
+
+                    <p>
+
+                        A responsive personal portfolio created
+                        using HTML, CSS and JavaScript with
+                        animations, theme switching and
+                        responsive navigation.
+
+                    </p>
+
+
+                    <div class="tags">
+
+
+                        <span class="tag">
+                            HTML
+                        </span>
+
+
+                        <span class="tag">
+                            CSS
+                        </span>
+
+
+                        <span class="tag">
+                            JavaScript
+                        </span>
+
+
+                        <span class="tag">
+                            Responsive UI
+                        </span>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- Project 3 -->
+
+                <article class="card reveal delay-2">
+
+
+                    <div class="meta">
+
+                        Add your next project
+
+                    </div>
+
+
+                    <h3>
+
+                        Project Showcase
+
+                    </h3>
+
+
+                    <p>
+
+                        Replace this card with your next project.
+                        Add its problem statement, solution,
+                        technologies, GitHub repository and
+                        live demo.
+
+                    </p>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT SECTION
+             ================================================= -->
+
+        <section
+            id="contact"
+            class="portfolio-section section-anchor">
+
+
+            <header class="page-head container reveal">
+
+
+                <div class="kicker">
+
+                    06 · Contact
+
+                </div>
+
+
+                <h2>
+
+                    Let's
+
+                    <span class="gradient-text">
+
+                        connect.
+
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Reach out for collaboration, projects,
+                    learning opportunities or professional
+                    conversations.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="container contact-grid">
+
+
+
+                <!-- =========================================
+                     CONTACT DETAILS
+                     ========================================= -->
+
+                <div class="card reveal">
+
+
+                    <h3 class="section-title">
+
+                        Contact Details
+
+                    </h3>
+
+
+                    <div class="contact-list">
+
+
+
+                        <!-- Email -->
+
+                        <div class="contact-item">
+
+
+                            <small>
+                                Email
+                            </small>
+
+
+                            <a
+                                href="mailto:suhitaroy24@gmail.com">
+
+                                suhitaroy24@gmail.com
+
+                            </a>
+
+
+                        </div>
+
+
+
+                        <!-- Phone -->
+
+                        <div class="contact-item">
+
+
+                            <small>
+                                Phone
+                            </small>
+
+
+                            <span>
+
+                                +91 9547439870
+
+                            </span>
+
+
+                        </div>
+
+
+
+                        <!-- Location -->
+
+                        <div class="contact-item">
+
+
+                            <small>
+                                Location
+                            </small>
+
+
+                            <span>
+
+                                Kolkata, West Bengal
+
+                            </span>
+
+
+                        </div>
+
+
+
+                        <!-- LinkedIn -->
+
+                        <div class="contact-item">
+
+
+                            <small>
+                                LinkedIn
+                            </small>
+
+
+                            <a
+                                href="https://www.linkedin.com/in/suhita-roy-a2a7a2322"
+                                target="_blank"
+                                rel="noopener">
+
+                                linkedin.com/in/suhita-roy-a2a7a2322
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Resume button -->
+
+                    <a
+                        href="assets/RESUME.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-primary full-btn">
+
+                        View Resume ↗
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     CONTACT FORM
+                     ========================================= -->
+
+                <div class="card reveal delay-1">
+
+
+                    <h3 class="section-title">
+
+                        Send a Message
+
+                    </h3>
+
+
+                    <!-- =========================================================
+     CONTACT FORM
+     
+     Formspree receives the visitor's message and
+     forwards the submission to your configured email.
+     ========================================================= -->
+
+<form
+    id="contactForm"
+    action="https://formspree.io/f/xdenragq"
+    method="POST"
+>
+
+    <!-- Visitor's name -->
+    <label for="name">
+        Your Name
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+        >
+    </label>
+
+
+    <!-- Visitor's email -->
+    <label for="email">
+        Your Email
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+        >
+    </label>
+
+
+    <!-- Visitor's message -->
+    <label for="message">
+        Message
+
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message..."
+            required
+        ></textarea>
+    </label>
+
+
+    <!-- Subject shown in your email -->
+    <input
+        type="hidden"
+        name="_subject"
+        value="New message from Suhita's Portfolio"
+    >
+
+
+    <!-- Submit button -->
+    <button
+        type="submit"
+        class="btn btn-primary"
+    >
+        Send Message →
+    </button>
+
+</form>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+
+        <div class="container">
+
+
+            <p>
+
+                © 2026 Suhita Roy ·
+                Designed & built with HTML, CSS & JavaScript.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT FILE
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

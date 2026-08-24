@@ -1,0 +1,1941 @@
+/* =========================================================
+   SUHITA ROY PORTFOLIO
+   Yellow + Blue Humanised Theme
+   ========================================================= */
+
+
+/* =========================================================
+   DARK MODE - DEFAULT
+   ========================================================= */
+
+:root {
+
+    /* Main page background */
+    --bg: #071525;
+
+    /* Card background */
+    --surface: #0d2138;
+
+    /* Input / secondary background */
+    --surface-2: #132d48;
+
+    /* Main text */
+    --text: #f7f9fc;
+
+    /* Secondary text */
+    --muted: #aebdce;
+
+    /* Main blue */
+    --blue: #2589e8;
+
+    /* Lighter blue */
+    --blue-light: #61b5ff;
+
+    /* Main yellow */
+    --yellow: #ffd447;
+
+    /* Darker yellow */
+    --yellow-dark: #eab72c;
+
+    /* White */
+    --white: #ffffff;
+
+    /* Borders */
+    --border: rgba(255, 255, 255, 0.10);
+
+    /* Shadows */
+    --shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    /* Border radius */
+    --radius: 20px;
+}
+
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+body.light-mode {
+
+    --bg: #f7f9fc;
+
+    --surface: #ffffff;
+
+    --surface-2: #edf4fb;
+
+    --text: #102238;
+
+    --muted: #596b7f;
+
+    --blue: #176fc1;
+
+    --blue-light: #2589e8;
+
+    --yellow: #f2c52f;
+
+    --yellow-dark: #d8a900;
+
+    --border: rgba(16, 34, 56, 0.12);
+
+    --shadow:
+        0 18px 45px rgba(23, 111, 193, 0.10);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* Smooth scrolling when clicking navbar links */
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+
+    font-family:
+        'Inter',
+        sans-serif;
+
+    background:
+
+        /* Blue background glow */
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(37, 137, 232, 0.12),
+            transparent 28%
+        ),
+
+        /* Yellow background glow */
+        radial-gradient(
+            circle at 90% 25%,
+            rgba(255, 212, 71, 0.08),
+            transparent 25%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
+
+button,
+input,
+textarea {
+
+    font: inherit;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container {
+
+    width:
+        min(1120px, 92%);
+
+    margin-inline: auto;
+}
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 9px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:
+        var(--surface-2);
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            var(--blue),
+            var(--yellow)
+        );
+
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        linear-gradient(
+            var(--yellow),
+            var(--blue)
+        );
+}
+
+
+/* =========================================================
+   SCROLL PROGRESS BAR
+   ========================================================= */
+
+.scroll-progress {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0%;
+
+    height: 4px;
+
+    z-index: 2000;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--blue),
+            var(--yellow)
+        );
+
+    box-shadow:
+        0 0 12px
+        rgba(255, 212, 71, 0.45);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    backdrop-filter:
+        blur(16px);
+
+    background:
+        rgba(7, 21, 37, 0.88);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+/* Navbar in light mode */
+
+body.light-mode .navbar {
+
+    background:
+        rgba(247, 249, 252, 0.90);
+}
+
+
+/* =========================================================
+   NAV INNER
+   ========================================================= */
+
+.nav-inner {
+
+    min-height: 74px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   LOGO / BRAND
+   ========================================================= */
+
+.brand {
+
+    font-family:
+        'Space Grotesk',
+        sans-serif;
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Yellow part of logo */
+
+.brand span {
+
+    color:
+        var(--yellow);
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+
+    display: block;
+
+    padding:
+        9px 12px;
+
+    color:
+        var(--muted);
+
+    border-radius:
+        10px;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Hover effect */
+
+.nav-links a:hover {
+
+    color:
+        var(--text);
+
+    background:
+        rgba(37, 137, 232, 0.10);
+}
+
+
+/* Active navigation item */
+
+.nav-links a.active {
+
+    color:
+        var(--text);
+
+    background:
+        rgba(255, 212, 71, 0.12);
+
+    box-shadow:
+        inset 0 -2px 0
+        var(--yellow);
+}
+
+
+/* =========================================================
+   NAVIGATION CONTROLS
+   ========================================================= */
+
+.nav-controls {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+/* =========================================================
+   DARK / LIGHT MODE BUTTON
+   ========================================================= */
+
+.theme-toggle {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 50%;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+}
+
+
+.theme-toggle:hover {
+
+    transform:
+        rotate(12deg)
+        scale(1.06);
+
+    border-color:
+        var(--yellow);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.menu-btn {
+
+    display: none;
+
+    width: 42px;
+
+    height: 42px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SECTION SCROLL OFFSET
+   ========================================================= */
+
+.section-anchor {
+
+    scroll-margin-top: 90px;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+
+    min-height:
+        calc(100vh - 74px);
+
+    display: grid;
+
+    place-items: center;
+
+    padding:
+        75px 0;
+}
+
+
+/* Hero two-column layout */
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   SMALL SECTION LABEL
+   ========================================================= */
+
+.kicker {
+
+    color:
+        var(--yellow);
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+
+    font-family:
+        'Space Grotesk',
+        sans-serif;
+}
+
+
+/* Main hero heading */
+
+h1 {
+
+    font-size:
+        clamp(3rem, 8vw, 6.2rem);
+
+    line-height:
+        0.98;
+
+    margin:
+        16px 0 23px;
+
+    letter-spacing:
+        -4px;
+}
+
+
+/* =========================================================
+   YELLOW GRADIENT TEXT
+   ========================================================= */
+
+.gradient-text {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--yellow),
+            #fff0a5
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+}
+
+
+/* =========================================================
+   HERO PARAGRAPH
+   ========================================================= */
+
+.hero p {
+
+    color:
+        var(--muted);
+
+    max-width:
+        650px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   HERO BUTTON CONTAINER
+   ========================================================= */
+
+.hero-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON
+   ========================================================= */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding:
+        12px 19px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid var(--border);
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Button hover animation */
+
+.btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   PRIMARY YELLOW BUTTON
+   ========================================================= */
+
+.btn-primary {
+
+    background:
+        var(--yellow);
+
+    color:
+        #102238;
+
+    border:
+        none;
+
+    font-weight:
+        800;
+}
+
+
+.btn-primary:hover {
+
+    background:
+        #ffe06b;
+}
+
+
+/* =========================================================
+   SECONDARY / GHOST BUTTON
+   ========================================================= */
+
+.btn-ghost {
+
+    background:
+        rgba(37, 137, 232, 0.08);
+
+    color:
+        var(--text);
+}
+
+
+.btn-ghost:hover {
+
+    border-color:
+        var(--blue);
+
+    background:
+        rgba(37, 137, 232, 0.15);
+}
+
+
+/* Full-width button */
+
+.full-btn {
+
+    width:
+        100%;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE CONTAINER
+   ========================================================= */
+
+.profile-wrap {
+
+    position:
+        relative;
+
+    width:
+        min(370px, 82vw);
+
+    margin-inline:
+        auto;
+}
+
+
+/* Colored glow behind profile image */
+
+.profile-wrap::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    inset:
+        -12px;
+
+    border-radius:
+        35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--yellow)
+        );
+
+    opacity:
+        0.28;
+
+    filter:
+        blur(20px);
+
+    z-index:
+        -1;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
+
+.profile-img {
+
+    aspect-ratio:
+        4 / 5;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        30px;
+
+    border:
+        3px solid
+        rgba(255, 212, 71, 0.55);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+/* =========================================================
+   FLOATING INFORMATION CARDS
+   ========================================================= */
+
+.float-card {
+
+    position:
+        absolute;
+
+    padding:
+        13px 15px;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        var(--shadow);
+
+    font-size:
+        0.82rem;
+
+    animation:
+        float 4s ease-in-out infinite;
+}
+
+
+/* First floating card */
+
+.float-one {
+
+    left:
+        -35px;
+
+    top:
+        15%;
+}
+
+
+/* Second floating card */
+
+.float-two {
+
+    right:
+        -35px;
+
+    bottom:
+        15%;
+
+    animation-delay:
+        1.2s;
+}
+
+
+/* Floating card heading */
+
+.float-card strong {
+
+    display:
+        block;
+
+    color:
+        var(--yellow);
+
+    margin-bottom:
+        2px;
+}
+
+
+/* =========================================================
+   FLOATING ANIMATION
+   ========================================================= */
+
+@keyframes float {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px);
+    }
+}
+
+
+/* =========================================================
+   GENERAL PORTFOLIO SECTIONS
+   ========================================================= */
+
+.portfolio-section {
+
+    min-height:
+        100vh;
+
+    padding:
+        75px 0 110px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.page-head {
+
+    padding:
+        25px 0 45px;
+}
+
+
+.page-head h2 {
+
+    font-size:
+        clamp(2.7rem, 7vw, 5rem);
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -2px;
+
+    margin:
+        14px 0;
+}
+
+
+.page-head p {
+
+    max-width:
+        720px;
+
+    color:
+        var(--muted);
+}
+
+
+/* =========================================================
+   TWO COLUMN GRID
+   ========================================================= */
+
+.grid-2 {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        22px;
+}
+
+
+/* =========================================================
+   GENERAL CARD
+   ========================================================= */
+
+.card {
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    padding:
+        27px;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Card hover */
+
+.card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(255, 212, 71, 0.55);
+}
+
+
+/* Light mode card hover */
+
+body.light-mode .card:hover {
+
+    border-color:
+        rgba(37, 137, 232, 0.4);
+}
+
+
+/* Card heading */
+
+.card h3 {
+
+    margin-bottom:
+        8px;
+}
+
+
+/* Card paragraph */
+
+.card p {
+
+    color:
+        var(--muted);
+}
+
+
+/* Card metadata */
+
+.card .meta {
+
+    color:
+        var(--blue-light);
+
+    font-size:
+        0.88rem;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        10px;
+}
+
+
+/* Section title */
+
+.section-title {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        23px;
+}
+
+
+/* =========================================================
+   EDUCATION CARDS
+   ========================================================= */
+
+.edu-link {
+
+    display:
+        block;
+
+    overflow:
+        hidden;
+
+    padding:
+        0;
+}
+
+
+/* Education image */
+
+.edu-link img {
+
+    width:
+        100%;
+
+    aspect-ratio:
+        16 / 9;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* Education image hover */
+
+.edu-link:hover img {
+
+    transform:
+        scale(1.03);
+}
+
+
+/* Education card text */
+
+.edu-body {
+
+    padding:
+        22px;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.timeline {
+
+    position:
+        relative;
+
+    margin-left:
+        12px;
+}
+
+
+/* Timeline vertical line */
+
+.timeline::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    left:
+        8px;
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        2px;
+
+    background:
+        linear-gradient(
+            var(--blue),
+            var(--yellow)
+        );
+}
+
+
+/* Timeline item */
+
+.timeline-item {
+
+    position:
+        relative;
+
+    padding:
+        0 0 30px 40px;
+}
+
+
+/* Timeline circle */
+
+.timeline-item::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        6px;
+
+    width:
+        18px;
+
+    height:
+        18px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--bg);
+
+    border:
+        4px solid
+        var(--yellow);
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skill {
+
+    margin-bottom:
+        20px;
+}
+
+
+/* Skill name + percentage */
+
+.skill-top {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        7px;
+}
+
+
+.skill-top span:last-child {
+
+    color:
+        var(--muted);
+
+    font-size:
+        0.84rem;
+}
+
+
+/* Skill progress background */
+
+.bar {
+
+    height:
+        8px;
+
+    border-radius:
+        99px;
+
+    background:
+        rgba(128, 150, 175, 0.18);
+
+    overflow:
+        hidden;
+}
+
+
+/* Skill progress */
+
+.bar span {
+
+    display:
+        block;
+
+    height:
+        100%;
+
+    width:
+        0;
+
+    border-radius:
+        inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--blue),
+            var(--yellow)
+        );
+
+    transition:
+        width 1.3s
+        cubic-bezier(.2, .8, .2, 1);
+}
+
+
+/* =========================================================
+   SKILL TAGS
+   ========================================================= */
+
+.tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        9px;
+
+    margin-top:
+        17px;
+}
+
+
+/* Individual tag */
+
+.tag {
+
+    padding:
+        7px 12px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(37, 137, 232, 0.08);
+
+    border:
+        1px solid
+        rgba(37, 137, 232, 0.18);
+
+    color:
+        var(--text);
+
+    font-size:
+        0.86rem;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Tag hover */
+
+.tag:hover {
+
+    background:
+        rgba(255, 212, 71, 0.12);
+
+    border-color:
+        var(--yellow);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   NOTICE BOX
+   ========================================================= */
+
+.notice {
+
+    margin-top:
+        25px;
+
+    padding:
+        17px;
+
+    border-left:
+        4px solid
+        var(--yellow);
+
+    background:
+        rgba(255, 212, 71, 0.07);
+
+    color:
+        var(--muted);
+
+    border-radius:
+        10px;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+.contact-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap:
+        24px;
+}
+
+
+/* Contact information list */
+
+.contact-list {
+
+    display:
+        grid;
+
+    gap:
+        12px;
+}
+
+
+/* Individual contact information */
+
+.contact-item {
+
+    padding:
+        15px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(37, 137, 232, 0.04);
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Contact item hover */
+
+.contact-item:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(255, 212, 71, 0.45);
+}
+
+
+/* Contact label */
+
+.contact-item small {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        3px;
+}
+
+
+/* Contact links */
+
+.contact-item a {
+
+    color:
+        var(--blue-light);
+
+    overflow-wrap:
+        anywhere;
+
+    transition:
+        0.25s ease;
+}
+
+
+.contact-item a:hover {
+
+    color:
+        var(--yellow);
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+form {
+
+    display:
+        grid;
+
+    gap:
+        15px;
+}
+
+
+/* Form labels */
+
+label {
+
+    font-size:
+        0.9rem;
+}
+
+
+/* =========================================================
+   INPUTS + TEXTAREA
+   ========================================================= */
+
+input,
+textarea {
+
+    width:
+        100%;
+
+    margin-top:
+        6px;
+
+    padding:
+        13px 14px;
+
+    border-radius:
+        11px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--surface-2);
+
+    color:
+        var(--text);
+
+    outline:
+        none;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Input placeholder */
+
+input::placeholder,
+textarea::placeholder {
+
+    color:
+        var(--muted);
+
+    opacity:
+        0.75;
+}
+
+
+/* Input focus */
+
+input:focus,
+textarea:focus {
+
+    border-color:
+        var(--yellow);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(255, 212, 71, 0.10);
+}
+
+
+/* Textarea */
+
+textarea {
+
+    min-height:
+        150px;
+
+    resize:
+        vertical;
+}
+
+
+/* =========================================================
+   CONTACT FORM SUBMIT BUTTON
+   ========================================================= */
+
+#contactForm button {
+
+    width:
+        100%;
+
+    margin-top:
+        5px;
+}
+
+
+/* Disabled button while sending */
+
+#contactForm button:disabled {
+
+    opacity:
+        0.65;
+
+    cursor:
+        not-allowed;
+
+    transform:
+        none;
+
+    box-shadow:
+        none;
+}
+
+
+/* =========================================================
+   SUCCESS STATE
+   ========================================================= */
+
+#contactForm button.success {
+
+    background:
+        #35b878;
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================================
+   ERROR STATE
+   ========================================================= */
+
+#contactForm button.error {
+
+    background:
+        #d9534f;
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        30px 0;
+
+    color:
+        var(--muted);
+
+    text-align:
+        center;
+}
+
+
+/* =========================================================
+   SCROLL REVEAL ANIMATION
+   ========================================================= */
+
+.reveal {
+
+    opacity:
+        0;
+
+    transform:
+        translateY(22px);
+
+    transition:
+        0.7s ease;
+}
+
+
+/* Visible state */
+
+.reveal.show {
+
+    opacity:
+        1;
+
+    transform:
+        none;
+}
+
+
+/* Animation delays */
+
+.delay-1 {
+
+    transition-delay:
+        0.1s;
+}
+
+
+.delay-2 {
+
+    transition-delay:
+        0.2s;
+}
+
+
+.delay-3 {
+
+    transition-delay:
+        0.3s;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+
+    /* Show hamburger menu */
+
+    .menu-btn {
+
+        display:
+            flex;
+    }
+
+
+    /* Mobile navigation menu */
+
+    .nav-links {
+
+        position:
+            absolute;
+
+        left:
+            4%;
+
+        right:
+            4%;
+
+        top:
+            74px;
+
+        padding:
+            10px;
+
+        display:
+            none;
+
+        flex-direction:
+            column;
+
+        background:
+            var(--surface);
+
+        border:
+            1px solid var(--border);
+
+        border-radius:
+            14px;
+
+        box-shadow:
+            var(--shadow);
+    }
+
+
+    /* Open mobile menu */
+
+    .nav-links.open {
+
+        display:
+            flex;
+    }
+
+
+    /* Mobile navigation links */
+
+    .nav-links a {
+
+        width:
+            100%;
+    }
+
+
+    /* Convert grids to one column */
+
+    .hero-grid,
+    .contact-grid,
+    .grid-2 {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* Hero spacing */
+
+    .hero {
+
+        padding:
+            55px 0;
+    }
+
+
+    /* Section spacing */
+
+    .portfolio-section {
+
+        padding:
+            70px 0 90px;
+    }
+
+
+    /* Smaller profile */
+
+    .profile-wrap {
+
+        width:
+            min(330px, 75vw);
+    }
+
+
+    /* Move floating cards inward */
+
+    .float-one {
+
+        left:
+            -10px;
+    }
+
+
+    .float-two {
+
+        right:
+            -10px;
+    }
+
+
+    /* Smaller heading spacing */
+
+    h1 {
+
+        letter-spacing:
+            -2px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+
+    /* Stack hero buttons */
+
+    .hero-actions {
+
+        flex-direction:
+            column;
+    }
+
+
+    /* Full-width hero buttons */
+
+    .hero-actions .btn {
+
+        width:
+            100%;
+    }
+
+
+    /* Smaller floating cards */
+
+    .float-card {
+
+        font-size:
+            0.72rem;
+
+        padding:
+            9px 11px;
+    }
+
+
+    /* Smaller section heading */
+
+    .page-head h2 {
+
+        font-size:
+            2.7rem;
+    }
+
+
+    /* Smaller card padding */
+
+    .card {
+
+        padding:
+            21px;
+    }
+
+
+    /* Smaller navbar */
+
+    .nav-inner {
+
+        min-height:
+            68px;
+    }
+
+}
